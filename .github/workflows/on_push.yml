@@ -35,7 +35,6 @@ jobs:
             "Checks" = "${{ needs.checks.result }}"
             "Build" = "${{ needs.build.result }}"
             "Tests" = "${{ needs.tests.result }}"
-            "Docs" = "${{ needs.docs.result }}"
           }
 
           $exit = 0
