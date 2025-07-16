@@ -57,7 +57,7 @@
                 startMenuLaunchers = true;
               };
               programs.bash.loginShellInit = ''
-                nixos-wsl-welcome'
+                nixos-wsl-welcome
               '';
 
               # When the config is built from a flake, the NIX_PATH entry of nixpkgs is set to its flake version.
