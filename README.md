@@ -1,8 +1,8 @@
 <h1 align=center>
   <img src="https://raw.githubusercontent.com/nix-community/NixOS-WSL/refs/heads/main/assets/NixOS-WSL.svg" alt="NixOS-WSL" width="500rem" /><br />
   <a href="https://matrix.to/#/#wsl:nixos.org"><img src="https://img.shields.io/matrix/wsl:nixos.org?server_fqdn=matrix.org&logo=matrix" alt="Matrix Chat" /></a>
-  <a href="https://github.com/NixOS/nixpkgs/tree/nixos-24.11"><img src="https://img.shields.io/badge/nixpkgs-24.11-brightgreen" alt="nixpkgs 24.11" /></a>
-  <a href="https://github.com/nix-community/NixOS-WSL/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/nix-community/NixOS-WSL/total"></a>
+  <a href="https://github.com/NixOS/nixpkgs/tree/nixos-25.05"><img src="https://img.shields.io/badge/nixpkgs-25.05-brightgreen" alt="nixpkgs 25.05" /></a>
+  <a href="https://github.com/reinthal/NixOS-WSL/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/nix-community/NixOS-WSL/total"></a>
 </h1>
 
 Modules for running NixOS on the Windows Subsystem for Linux
@@ -19,7 +19,7 @@ Run the following from powershell:
     wsl --install --no-distribution
     ```
 
-2. Download `nixos.wsl` from [the latest release](https://github.com/nix-community/NixOS-WSL/releases/latest).
+2. Download `nixos.wsl` from [the latest release](https://github.com/reinthal/NixOS-WSL/releases/latest).
 
 3. Double-click the file you just downloaded (requires WSL >= 2.4.4)
 
