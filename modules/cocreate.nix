@@ -1,8 +1,7 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
+{ config
+, lib
+, pkgs
+, ...
 }:
 with builtins;
 with lib; {
@@ -10,12 +9,13 @@ with lib; {
     enable = mkEnableOption "Cocreate development environment";
   };
 
-  config = let
-    cfg = config.wsl.cocreate;
-  in
+  config =
+    let
+      cfg = config.wsl.cocreate;
+    in
     mkIf (config.wsl.enable && cfg.enable) {
       # Enable flakes and new nix command
-      nix.settings.experimental-features = ["nix-command" "flakes"];
+      nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
       # Install development packages
       environment.systemPackages = with pkgs; [

@@ -1,8 +1,7 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
+{ config
+, lib
+, pkgs
+, ...
 }:
 with builtins;
 with lib; {
@@ -26,9 +25,10 @@ with lib; {
     };
   };
 
-  config = let
-    cfg = config.wsl.podman;
-  in
+  config =
+    let
+      cfg = config.wsl.podman;
+    in
     mkIf (config.wsl.enable && cfg.enable) {
       # Enable container support and Podman
       virtualisation.containers.enable = true;

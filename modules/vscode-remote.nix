@@ -1,8 +1,7 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
+{ config
+, lib
+, pkgs
+, ...
 }:
 with builtins;
 with lib; {
@@ -10,9 +9,10 @@ with lib; {
     enable = mkEnableOption "VS Code Remote support";
   };
 
-  config = let
-    cfg = config.wsl.vscode-remote;
-  in
+  config =
+    let
+      cfg = config.wsl.vscode-remote;
+    in
     mkIf (config.wsl.enable && cfg.enable) {
       # Install wget required for VS Code Remote
       environment.systemPackages = with pkgs; [
